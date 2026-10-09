@@ -3,30 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy - Personal YouTube Uploader</title>
+<title>Privacy policy - Personal Video Uploader</title>
 <style>
 body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:640px;margin:3rem auto;padding:0 1rem;color:#1a1a1a;line-height:1.55}
-h1{font-size:1.5rem}
+h1{font-size:1.5rem} h2{font-size:1.15rem;margin-top:2rem}
 a{color:#0b57d0}
 footer{margin-top:3rem;color:#666;font-size:.9rem}
 </style>
 </head>
 <body>
 <h1>Privacy policy</h1>
-<p>This policy applies to Personal YouTube Uploader, a personal-use app operated by Krisna Arora. Effective 8 October 2026.</p>
+<p>This policy applies to Personal Video Uploader, a personal-use app operated by Krisna Arora. Effective 10 October 2026.</p>
+<p>This app uses YouTube API Services. By using it you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's data practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <ul>
 <li><strong>Purpose:</strong> upload the owner's videos to the owner's YouTube channels and check the upload results. Google account access is used only for that purpose.</li>
-<li><strong>Data handled:</strong> video files, thumbnails when supplied, titles, descriptions, visibility settings, channel identifiers, video identifiers and upload status. The app also stores OAuth credentials so it can perform authorized uploads without repeated sign-in.</li>
-<li><strong>Use and storage:</strong> credentials are kept in encrypted credential storage. Video files and upload metadata may be retained as needed for an upload, retries, result checks and the owner's records. Access is limited to the owner and service providers helping operate the personal app.</li>
-<li><strong>Sharing:</strong> video files and metadata are sent to Google/YouTube to perform the requested upload. Hosting, storage and operational service providers may process the data needed to run the app. Data is not sold or used for advertising, and is not shared with unrelated people.</li>
-<li><strong>Control and deletion:</strong> the owner can revoke the app's access in Google Account permissions and request deletion of stored credentials, files or records by contacting the address below. Revoking access does not delete videos already on YouTube; those can be deleted in YouTube Studio.</li>
-<li><strong>Security and limits:</strong> encryption and restricted access are used to protect credentials. No system can guarantee uninterrupted access or perfect security.</li>
+<li><strong>Data handled:</strong> video files, titles, descriptions, visibility settings, channel identifiers, video identifiers and upload status. The app also stores an OAuth refresh token so it can perform authorized uploads without repeated sign-in. Requested access is limited to uploading videos and reading channel and video information.</li>
+<li><strong>Use and storage:</strong> video files are sent in chunks straight to YouTube and are not stored by the app. The refresh token is encrypted and stored in a database that only the owner's app can read. Stored records, including the token, channel and video identifiers and upload status, are kept for at most 30 days and then stop being used. Temporary upload progress records are kept for one day. Hosting provider backups may keep older copies for up to 7 days.</li>
+<li><strong>Sharing:</strong> video files and metadata are sent to Google/YouTube to perform the requested upload. The hosting provider (Cloudflare) processes the data needed to run the app. Data is not sold, not used for advertising, and not shared with other people.</li>
+<li><strong>Control and deletion:</strong> the owner can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. The app also has a disconnect control that deletes the stored token and channel records and asks Google to revoke the grant. On request to krisnaaroraa@gmail.com, stored records are deleted. Revoking access does not delete videos already on YouTube; those can be deleted in YouTube Studio.</li>
+<li><strong>Security and limits:</strong> credentials are encrypted and access is restricted to the owner. No system can guarantee uninterrupted access or perfect security.</li>
 <li><strong>Changes:</strong> this page will be updated if the app's data practices change.</li>
 </ul>
-<p>Use of information received from Google APIs follows the Google API Services User Data Policy, including its Limited Use requirements.</p>
-<p><a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a></p>
+<p>Use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
 <p>Contact: <a href="mailto:krisnaaroraa@gmail.com">krisnaaroraa@gmail.com</a>.</p>
-<p><a href="index.html">Back to homepage</a></p>
+<p><a href="index.html">Back to homepage</a> | <a href="terms.html">Terms of service</a></p>
 <footer>Personal use only. Contact krisnaaroraa@gmail.com.</footer>
 </body>
 </html>
